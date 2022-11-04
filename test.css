@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', 'Cairo-SemiBold', 'Cairo-Bold', sans-serif;
+   
+}
+body{
+ background-color: #f1f6ff;
+ direction: rtl; 
+}
+.imgg{
+   width: 100px ;
+   margin-top: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  
+margin-bottom: 10px;    
+    
+}
+ 
+
+nav{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ position: sticky;
+ background-color: white;
+ width: 100%;
+ padding-bottom: 3px;
+ opacity: .9;
+ box-shadow: 0px 0px 5px #afafaf;
+
+}
+a{
+  text-decoration: none;
+ margin: 8px;
+  color: #052659;  
+  font-family: 'Cairo', 'Cairo-SemiBold', 'Cairo-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+transition: 0.4s;
+
+}
+.brd:hover{
+ color: white;
+ background-color: #4aca41;
+ border-radius:10px ;
+ 
+}
+header{
+opacity: 0.9;
+
+
+}
+
+@media (max-width:992px)
+{
+header ul{
+  display: none;
+}
+}
+.sgl{
+position: absolute;
+ left: 70px;
+ border: 2px solid #052659;;
+ padding: 0px 8px;
+ border-radius:20px ;
+ font-size: 20px; 
+ transition: .3s;
+ font-weight: 500;
+}
+.sgl:hover{
+ background-color: #4aca41;
+ color: white; 
+ border: 2px solid #4aca41;
+}
+.lng{
+  position: absolute;
+  left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+  transition: .3s;
+}
+.lng:hover{
+ color: #4aca41; 
+}
+@media (max-width:1090px)
+{
+a{
+ font-size: 13px; 
+}
+ 
+}
+.sec1{
+ font-size: 50px; 
+ display: flex;
+ justify-content: center;
+ margin-top: 35px;
+width: 100%;
+}
+
+.intro{
+ font-size: 50px;
+ text-decoration: none;
+ font-weight: 400; 
+ color: #052659;
+ 
+}
+span{
+ color: #4aca41; 
+}
+@media (max-width:1000px)
+{
+.sec1{
+text-align: center;
+}
+.intro{
+ margin-right: 20px;
+ margin-left: 20px; 
+}
+}
+@media (max-width:500px)
+{
+ .intro{
+  font-size: 30px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px; 
+ } 
+}
+.sec2{
+background-color: white;
+display: flex;
+justify-content: center;
+width: 90%;
+margin: auto;
+border-radius: 15px;
+padding: 25px;
+height: auto;
+padding-bottom: 40px;
+margin-top: 25px;
+box-shadow: 0px 14px 25px #d8dfe5;
+}
+.imgg2{
+  border-radius: 15px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  max-height: 300px
+}
+.main1 {
+direction: rtl;
+}
+.main1 h2{
+ color: #4aca41;
+ font-weight: 400; 
+}
+.main1 h4{
+ color: #212529;
+ font-size: 25px;
+ letter-spacing: 1px;
+ font-weight: 400;
+ margin-bottom: 10px; 
+}
+.main1 p {
+color: #212529;  
+}
+@media (max-width:768px)
+{
+.sec2{
+display: block;
+
+}
+.imgg2{
+margin: auto;
+position: relative;
+width: 75%; 
+}
+}
+.scroll{
+
+width: 100%;
+margin-top: 50px;
+background-color: #052659;
+color: white;  
+overflow: hidden;
+white-space: nowrap;
+padding-top: 7px;
+padding-bottom: 7px;
+}
+.scroll h3{
+
+ text-align: center;
+ 
+ animation: scroll 35s linear infinite; 
+
+}
+@keyframes scroll{
+ 0%{
+  transform: translateX(-100%); 
+  
+ }
+ 100%{
+  transform: translateX(100%); 
+  
+ }
+}
+.aa55{
+color: #4aca41;
+font-size: 40px;
+font-weight: 400;
+text-align: center;
+margin-top: 20px;  
+}
+.sec4{
+ display: flex; 
+ flex-wrap: wrap;
+ background-color: #4aca41;
+ justify-content: center;
+
+}
+#img{
+ width: 30%;
+ margin: auto; 
+}
+.slider{
+ height: 250px;
+ margin: auto;
+ position:relative;
+width: 90%;
+display: flex;
+justify-content: center; 
+margin-top: 10px; 
+overflow: hidden;
+
+}
+.slide-track{
+ display: flex;
+ width: calc(250px * 24); 
+
+
+}
+
+
+.slide{
+ height: 200px;
+ width: 100%px;
+ display: flex;
+ align-items: center;
+ padding: 15px; 
+ perspective: 50px;
+
+
+}
+.ghgh{
+ width: 120px; 
+ transition: 0.5s;
+
+}
+.ghgh:hover{
+ transform: scale(1.3); 
+}
+.slide-track{
+ animation: slider 8s linear infinite;
+
+}
+@keyframes slider{
+ 0%{transform: translateX(0);}
+ 100%{transform: translateX(1230px );} 
+}
+.slide-track:hover{
+animation-play-state: paused; 
+}
